@@ -1,0 +1,5 @@
+Component: main
+Origin: godot2-rpi
+Label: godot2-rpi
+Architecture: armhf
+Description: Godot 2.1 for Raspbian

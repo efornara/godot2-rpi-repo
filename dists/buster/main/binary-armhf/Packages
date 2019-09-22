@@ -1,0 +1,101 @@
+Package: godot2
+Version: 2.1.6-1
+Architecture: all
+Depends: godot2-editor
+Suggests: godot2-doc
+Homepage: https://godotengine.org
+Priority: optional
+Section: devel
+Filename: pool/main/g/godot2/godot2_2.1.6-1_all.deb
+Size: 2388
+SHA256: 20a67dd38f77db9ea6ec24fae50629d9175ad138aca7de85b73e71c07c73a053
+SHA1: 56eac8ee7c3b2663e8262a240fd7f7dfc77187f3
+MD5sum: b989e7d441cda352d945692667e4e8bc
+Description: Full 2D and 3D game engine with editor
+ Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
+ It provides a huge set of common tools, so you can just focus on making
+ your game without reinventing the wheel.
+ This is an old version of the Godot game engine, and more recent versions
+ are available.
+Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
+Installed-Size: 36
+
+Package: godot2-doc
+Version: 2.1.6-1
+Architecture: all
+Suggests: godot2
+Homepage: https://godotengine.org
+Priority: optional
+Section: devel
+Filename: pool/main/g/godot2-doc/godot2-doc_2.1.6-1_all.deb
+Size: 43500880
+SHA256: 4cb99467aed612c7fc11b555c54e0cf9349ac0b48f99963731cd5b770d382249
+SHA1: 7a0d150ef9eb11f12928cb6972c04082d0835837
+MD5sum: 8ba8af10b245f8bb07088997046531c5
+Description: Godot game engine documentation
+ Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
+ This package provides documentation for the engine in HTML format.
+Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
+Installed-Size: 257928
+
+Package: godot2-editor
+Version: 2.1.6-1
+Architecture: armhf
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libgl1, libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libpulse0 (>= 0.99.1), libsquish0, libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libtheora0 (>= 1.0), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2, zlib1g (>= 1:1.2.0)
+Provides: godot2-runner
+Suggests: godot2-doc
+Homepage: https://godotengine.org
+Priority: optional
+Section: devel
+Filename: pool/main/g/godot2-editor/godot2-editor_2.1.6-1_armhf.deb
+Size: 11563088
+SHA256: e7a82233e240f2ae8adc036c69f150cc82be29b3c280eb5183a409c3b0903b95
+SHA1: 50b22eadbd8e63f6519831c79eb4dc285754d31d
+MD5sum: feb60224e61cc79afc2e9914072d94ff
+Description: Godot game engine editor
+ Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
+ This package provides the program (godot2) used to develop games.
+ It can only run on the Raspberry Pi 2 and above.
+Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
+Installed-Size: 60320
+
+Package: godot2-runner-x11
+Version: 2.1.6-1
+Architecture: armhf
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libgl1, libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libpulse0 (>= 0.99.1), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libtheora0 (>= 1.0), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2, zlib1g (>= 1:1.2.0)
+Provides: godot2-runner
+Homepage: https://godotengine.org
+Priority: optional
+Section: devel
+Filename: pool/main/g/godot2-runner-x11/godot2-runner-x11_2.1.6-1_armhf.deb
+Size: 4621856
+SHA256: 2687327415eef1e1eddb709a6e220710e52835f734afcf3ebb021139594a772d
+SHA1: 6dffb18cfe5b08549069fd807415aacf4a1b244c
+MD5sum: 4849f19d514f59b76d781fb599edd116
+Description: Godot game engine run-time (x11)
+ Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
+ This package allows games to be run from source or data-pack.
+ This version of godot2-runner is the standard version of the run-time.
+ It depends on x11 and it can only run on the Raspberry Pi 2 and above.
+Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
+Installed-Size: 28376
+
+Package: godot2-server
+Version: 2.1.6-1
+Architecture: armhf
+Depends: libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), zlib1g (>= 1:1.2.0)
+Homepage: https://godotengine.org
+Priority: optional
+Section: devel
+Filename: pool/main/g/godot2-server/godot2-server_2.1.6-1_armhf.deb
+Size: 4629792
+SHA256: 7cd10897ad9f863bceca080c1bf8fcd06d9000d236a402df4e2e0e556684fe96
+SHA1: 95806ad203432bee57b785a9354496fa5fe69556
+MD5sum: bf6aeee272c76aafd80b72f16fcca990
+Description: Headless Godot game engine run-time
+ Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
+ This package provides a command-line only version of the program.
+ It can run on any version of the Raspberry Pi.
+Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
+Installed-Size: 24164
+

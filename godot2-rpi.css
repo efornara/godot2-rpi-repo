@@ -1,0 +1,7 @@
+body {
+ margin: 2rem;
+ max-width: 40rem;
+ background-color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
+ font-family: Arial, Helvetica, sans-serif;
+}

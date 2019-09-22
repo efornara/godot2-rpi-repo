@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>godot2-rpi</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="godot2-rpi.css" />
+</head>
+<body>
+<header>
+<h1 class="title">godot2-rpi</h1>
+</header>
+<p>This repository contains pre-compiled binaries of the Godot game engine, version 2.1.</p>
+<p>To create games with it, you need at least a Raspberry Pi 2 with the new OpenGL driver enabled.</p>
+<p>I have found that on a Raspberry Pi 3B+ (not overclocked), Godot 2.1 is pretty snappy, but, even on a Raspberry Pi 2, it is fairly useable. While these binaries have not been tested on a Raspberry Pi 4, they should work.</p>
+<p>Please note that this is an old version of Godot, and more recent versions are available.</p>
+<h2 id="installing-godot-2.1">Installing Godot 2.1</h2>
+<p>First, add the public key of this repository to apt:</p>
+<pre><code>wget -O - https://efornara.github.io/godot2-rpi-repo/efornara-repos.key | sudo apt-key add -</code></pre>
+<p>Then, add the repository to apt. Download an apt entry:</p>
+<pre><code>wget https://efornara.github.io/godot2-rpi-repo/godot2-rpi.list</code></pre>
+<p>Or create it yourself:</p>
+<pre><code># Godot 2.1 for Raspbian
+deb https://efornara.github.io/godot2-rpi-repo buster main</code></pre>
+<p>And copy it to <code>/etc/apt/sources.list.d</code>:</p>
+<pre><code>sudo cp godot2-rpi.list /etc/apt/sources.list.d</code></pre>
+<p>Finally, after an update:</p>
+<pre><code>sudo apt update</code></pre>
+<p>You can install godot2:</p>
+<pre><code>sudo apt install godot2 godot2-doc</code></pre>
+<p>You strictly don’t need to install <code>godot-doc</code> and if you are short on space you can skip it (it is around 250M), but it is really recommended that you do: the Godot documentation is pretty extensive.</p>
+</body>
+</html>
