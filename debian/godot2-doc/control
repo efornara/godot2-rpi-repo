@@ -1,0 +1,7 @@
+Version: 2.1.6-1
+Architecture: all
+Suggests: godot2
+Homepage: https://godotengine.org
+Description: Godot game engine documentation
+ Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
+ This package provides documentation for the engine in HTML format.

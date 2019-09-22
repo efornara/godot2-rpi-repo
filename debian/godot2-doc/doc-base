@@ -1,0 +1,12 @@
+Document: godot2
+Title: Godot 2.1
+Author: Juan Linietsky, Ariel Manzur and the Godot community
+Abstract: This is the official documentation of Godot Engine,
+ the free and open source community-driven 2D and 3D game engine!
+ It has been generated from the following repository:
+ https://github.com/godotengine/godot-docs
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/godot2-doc/html/index.html
+Files: /usr/share/doc/godot2-doc/html/*.html /usr/share/doc/godot2-doc/html/development/plugins/*.html /usr/share/doc/godot2-doc/html/development/compiling/*.html /usr/share/doc/godot2-doc/html/development/cpp/*.html /usr/share/doc/godot2-doc/html/about/*.html /usr/share/doc/godot2-doc/html/community/tutorials/*.html /usr/share/doc/godot2-doc/html/community/tutorials/3d/*.html /usr/share/doc/godot2-doc/html/community/contributing/*.html /usr/share/doc/godot2-doc/html/classes/*.html /usr/share/doc/godot2-doc/html/learning/features/*.html /usr/share/doc/godot2-doc/html/learning/features/platform/*.html /usr/share/doc/godot2-doc/html/learning/features/misc/*.html /usr/share/doc/godot2-doc/html/learning/features/animation/*.html /usr/share/doc/godot2-doc/html/learning/features/3d/*.html /usr/share/doc/godot2-doc/html/learning/features/gui/*.html /usr/share/doc/godot2-doc/html/learning/features/math/*.html /usr/share/doc/godot2-doc/html/learning/features/physics/*.html /usr/share/doc/godot2-doc/html/learning/features/2d/*.html /usr/share/doc/godot2-doc/html/learning/features/shading/*.html /usr/share/doc/godot2-doc/html/learning/features/inputs/*.html /usr/share/doc/godot2-doc/html/learning/features/lighting/*.html /usr/share/doc/godot2-doc/html/learning/features/viewports/*.html /usr/share/doc/godot2-doc/html/learning/features/networking/*.html /usr/share/doc/godot2-doc/html/learning/scripting/*.html /usr/share/doc/godot2-doc/html/learning/scripting/gdscript/*.html /usr/share/doc/godot2-doc/html/learning/step_by_step/*.html /usr/share/doc/godot2-doc/html/learning/editor/*.html /usr/share/doc/godot2-doc/html/learning/workflow/*.html /usr/share/doc/godot2-doc/html/learning/workflow/project_setup/*.html /usr/share/doc/godot2-doc/html/learning/workflow/assets/*.html /usr/share/doc/godot2-doc/html/learning/workflow/export/*.html 

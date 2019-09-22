@@ -1,0 +1,6 @@
+#! /bin/sh
+set -e
+
+update-alternatives --install /usr/bin/godot2-runner godot2-runner /usr/bin/godot2-runner-x11 30
+
+exit 0
