@@ -17,11 +17,11 @@
 <header>
 <h1 class="title">godot2-rpi</h1>
 </header>
-<p>This repository contains pre-compiled binaries of the Godot game engine, version 2.1.</p>
+<p>This repository contains pre-compiled binaries of the Godot game engine, version 2.1, for the Raspbian distribution.</p>
 <p>To create games with it, you need at least a Raspberry Pi 2 with the new OpenGL driver enabled.</p>
 <p>I have found that on a Raspberry Pi 3B+ (not overclocked), Godot 2.1 is pretty snappy, but, even on a Raspberry Pi 2, it is fairly useable. While these binaries have not been tested on a Raspberry Pi 4, they should work.</p>
-<p>Please note that this is an old version of Godot, and more recent versions are available.</p>
-<h2 id="installing-godot-2.1">Installing Godot 2.1</h2>
+<p>Please note that this is an old version of Godot, and more recent versions are available. See here: <a href="https://godotengine.org" class="uri">https://godotengine.org</a>.</p>
+<h2 id="installing-godot-2.1-on-raspbian">Installing Godot 2.1 on Raspbian</h2>
 <p>First, add the public key of this repository to apt:</p>
 <pre><code>wget -O - https://efornara.github.io/godot2-rpi-repo/efornara-repos.key | sudo apt-key add -</code></pre>
 <p>Then, add the repository to apt. Download an apt entry:</p>
@@ -29,12 +29,20 @@
 <p>Or create it yourself:</p>
 <pre><code># Godot 2.1 for Raspbian
 deb https://efornara.github.io/godot2-rpi-repo buster main</code></pre>
-<p>And copy it to <code>/etc/apt/sources.list.d</code>:</p>
+<p>And copy it into <code>/etc/apt/sources.list.d</code>:</p>
 <pre><code>sudo cp godot2-rpi.list /etc/apt/sources.list.d</code></pre>
 <p>Finally, after an update:</p>
 <pre><code>sudo apt update</code></pre>
 <p>You can install godot2:</p>
 <pre><code>sudo apt install godot2 godot2-doc</code></pre>
-<p>You strictly don’t need to install <code>godot-doc</code> and if you are short on space you can skip it (it is around 250M), but it is really recommended that you do: the Godot documentation is pretty extensive.</p>
+<p>You strictly don’t need to install <code>godot2-doc</code> and if you are short on space you can skip it (it is around 250M uncompressed), but it is really recommended that you do: the Godot documentation is pretty extensive.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><p><a href="https://docs.godotengine.org/en/2.1/learning/step_by_step/index.html">Online Godot 2.1 Documentation</a> - Browse <code>godot2-doc</code> online.</p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLsk-HSGFjnaFISfGRTXxp65FXOa9UkYc5">Godot 101: Learning the Godot Game Engine</a> - 15 videos, 3h 6m.</p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLhqJJNjsQ7KEr_YlibZ3SBuzfw9xwGduK">Godot 2.1 Tutorials</a> - 34 videos, 8h 11m.</p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLv3l-oZCXaql20IlPe7gfBEzomnPSLekY">Godot Engine Tutorial - Flappy Bird</a> - 14 videos, 4h 1m.</p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLv3l-oZCXaqkUEqrLsKJIAhAxK_Im6Qew">Make a Space Shooting Game in Godot</a> - 17 videos, 2h 5m.</p></li>
+</ul>
 </body>
 </html>
