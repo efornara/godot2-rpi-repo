@@ -7,7 +7,7 @@ die() {
 }
 
 usage() {
-	die "usage: compile.sh editor|runner|server|frt"
+	die "usage: compile.sh editor|runner|server|headless|frt"
 }
 
 [ -x compile.sh ] || die "Please run from project root directory."
@@ -83,6 +83,17 @@ case $1 in
 			CCFLAGS="$ccflags_pi1" \
 			-j 4
 		strip bin/godot_server.server.opt.32
+		;;
+	headless)
+		nice scons \
+			platform=server \
+			tools=yes \
+			target=release_debug \
+			$common_opts \
+			builtin_libtheora=yes \
+			CCFLAGS="$ccflags_pi1" \
+			-j 4
+		strip bin/godot_server.server.opt.tools.32
 		;;
 	frt)
 		[ -f platform/frt/README.md ] || die "No frt source."
