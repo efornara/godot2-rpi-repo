@@ -1,19 +1,19 @@
 Origin: godot2-rpi
 Label: godot2-rpi
 Codename: buster
-Date: Tue, 24 Sep 2019 19:58:04 UTC
+Date: Wed, 16 Oct 2019 18:22:39 UTC
 Architectures: armhf
 Components: main
 Description: Godot 2.1 for Raspbian
 MD5Sum:
- ab4b8b778335069ab2efa06a6fe4b6d3 6005 main/binary-armhf/Packages
- 34cd2544bf81af6ff03bb838b94c440c 1696 main/binary-armhf/Packages.gz
+ 5d6413fdaa1a915e30ae5fcb76d44978 8708 main/binary-armhf/Packages
+ 30a0a11edfc7cdb8a24ce53cb800465f 1984 main/binary-armhf/Packages.gz
  d22809264bd4e5a087a49eb94fa7c927 109 main/binary-armhf/Release
 SHA1:
- a89c24ac7b0ba8cc99d01eacb03f74a39fb43adf 6005 main/binary-armhf/Packages
- d6f78dadce104ab1951f2aafa689940ccde2f9ac 1696 main/binary-armhf/Packages.gz
+ 5485f133202fc1448213215d02576221e4bd5b15 8708 main/binary-armhf/Packages
+ c9097a0cf613f2b99e1203ce9883ce994115f843 1984 main/binary-armhf/Packages.gz
  bd83b54bce6f431de41885da93ec29803873b343 109 main/binary-armhf/Release
 SHA256:
- 5847f55386b9846014a8fcf3229a2670f9bb0f54140598430cbb35e3ba5c14ab 6005 main/binary-armhf/Packages
- c8ea82ac692fca7d294543097643f16054658d72bf725f63cfb8620321a46a31 1696 main/binary-armhf/Packages.gz
+ 39e78fc71bef2e5da54cbc94bbbacc516d56ff90a03f83bdc8502c2a7db6b550 8708 main/binary-armhf/Packages
+ 54536bdc77e66406a0ea4514bae82f952aa633347b99477c9a8883606aabdc29 1984 main/binary-armhf/Packages.gz
  8f6a14100fe955a4816ca5cb47fa2881f50513d790758cbfeb73e4a92f74f786 109 main/binary-armhf/Release
