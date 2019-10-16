@@ -5,13 +5,20 @@ set -e
 
 cd $1
 
-sed 's/^/# /' godot/LICENSE.txt
+if [ "$2" = "stable" ]
+then
+	base=stable
+else
+	base=godot
+fi
+
+sed 's/^/# /' $base/LICENSE.txt
 echo
 
 if [ "$2" = "frt" ]
 then
-	sed 's/^/# /' godot/platform/frt/LICENSE.txt
+	sed 's/^/# /' $base/platform/frt/LICENSE.txt
 	echo
 fi
 
-cat godot/COPYRIGHT.txt
+cat $base/COPYRIGHT.txt

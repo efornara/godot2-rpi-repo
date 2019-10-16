@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Godot Engine (2.1, stable)
+GenericName=Libre game engine
+Comment=Multi-platform 2D and 3D game engine with a feature rich editor
+Exec=godot2-stable -pm
+Icon=godot2-stable
+Terminal=false
+Type=Application
+Categories=Development;IDE;

@@ -48,9 +48,10 @@ ccflags_pi2="\
 
 export BUILD_REVISION=rpi
 
-cd workdir/godot
+cd workdir
 case $1 in
 	editor)
+		cd godot
 		nice scons \
 			platform=x11 \
 			tools=yes \
@@ -63,6 +64,7 @@ case $1 in
 		strip bin/godot.x11.opt.tools.32.llvm
 		;;
 	runner)
+		cd godot
 		nice scons \
 			platform=x11 \
 			tools=no \
@@ -74,6 +76,7 @@ case $1 in
 		strip bin/godot.x11.opt.32.llvm
 		;;
 	server)
+		cd godot
 		nice scons \
 			platform=server \
 			tools=no \
@@ -85,6 +88,7 @@ case $1 in
 		strip bin/godot_server.server.opt.32
 		;;
 	headless)
+		cd godot
 		nice scons \
 			platform=server \
 			tools=yes \
@@ -96,6 +100,7 @@ case $1 in
 		strip bin/godot_server.server.opt.tools.32
 		;;
 	frt)
+		cd godot
 		[ -f platform/frt/README.md ] || die "No frt source."
 		nice scons \
 			platform=frt \
@@ -105,6 +110,31 @@ case $1 in
 			builtin_libtheora=yes \
 			-j 4
 		strip bin/godot.frt.opt.llvm.pi1
+		;;
+	editor-stable)
+		cd stable
+		nice scons \
+			platform=x11 \
+			tools=yes \
+			target=release_debug \
+			$common_opts \
+			builtin_libsquish=no \
+			builtin_libtheora=no \
+			CCFLAGS="$ccflags_pi2" \
+			-j 4
+		strip bin/godot.x11.opt.tools.32.llvm
+		;;
+	runner-stable)
+		cd stable
+		nice scons \
+			platform=x11 \
+			tools=no \
+			target=release \
+			$common_opts \
+			builtin_libtheora=no \
+			CCFLAGS="$ccflags_pi2" \
+			-j 4
+		strip bin/godot.x11.opt.32.llvm
 		;;
 	*) usage
 esac

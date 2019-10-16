@@ -42,6 +42,12 @@ You strictly don't need to install `godot2-doc` and if you are short on space
 you can skip it (it is around 250M uncompressed), but it is really recommended
 that you do: the Godot documentation is pretty extensive.
 
+## Stable Versions
+
+The versions installed by default are slightly modified compared to
+2.1.6-stable from upstream. If you prefer the unpatched versions, they are
+available as `godot2-editor-stable` and `godot2-runner-stable`.
+
 ## Resources
 
 - [Online Godot 2.1 Documentation](https://docs.godotengine.org/en/2.1/learning/step_by_step/index.html) -
