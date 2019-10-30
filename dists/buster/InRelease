@@ -4,35 +4,35 @@ Hash: SHA512
 Origin: godot2-rpi
 Label: godot2-rpi
 Codename: buster
-Date: Thu, 17 Oct 2019 20:41:03 UTC
+Date: Wed, 30 Oct 2019 20:07:54 UTC
 Architectures: armhf
 Components: main
 Description: Godot 2.1 for Raspbian
 MD5Sum:
- ac827f64825a5b452158ae100ad9dd28 9872 main/binary-armhf/Packages
- e4936bf3a0f0b06ffa19624bc31d87e5 2172 main/binary-armhf/Packages.gz
+ e1ae4580c74049d337cd81534e972195 9504 main/binary-armhf/Packages
+ bc51689eff01274891084c2aacd60380 2168 main/binary-armhf/Packages.gz
  d22809264bd4e5a087a49eb94fa7c927 109 main/binary-armhf/Release
 SHA1:
- ec8a9e51797efcc667810e1cbd39444f982cbccb 9872 main/binary-armhf/Packages
- 5c9d35f16f68932db9741e82f8d6f0e5dddd346e 2172 main/binary-armhf/Packages.gz
+ 2892d33f0d342f41d613420e7b8a0ee4ebe1b8d6 9504 main/binary-armhf/Packages
+ e89d7dea9021e8d30d2769c007c54517c4db97f1 2168 main/binary-armhf/Packages.gz
  bd83b54bce6f431de41885da93ec29803873b343 109 main/binary-armhf/Release
 SHA256:
- d0268f61753a8bb10a1c0cb3bd24b50c5906ff8fb0427b2590a53c71cab88d96 9872 main/binary-armhf/Packages
- dbfc9d0a17ac9b9855591472b20c5f17eceb4337f882625b4d939fdcd3a25ecb 2172 main/binary-armhf/Packages.gz
+ b350dfe2fe986c2512fb4d3b1faca74ce88ff9607a5d2e48b803e8d643e63c79 9504 main/binary-armhf/Packages
+ e9635caf51f5c55b75074864fe221585132fe5670594457809a3ef5e7ce99974 2168 main/binary-armhf/Packages.gz
  8f6a14100fe955a4816ca5cb47fa2881f50513d790758cbfeb73e4a92f74f786 109 main/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEspJhYfD4nO6KU99GBo05RKjIab4FAl2o0d8ACgkQBo05RKjI
-ab4oOw/+JJmRsmhSeDaP/dc7U6lN9GsrKAULf+J/1ObxWQ13JpbruS79W9Npy+2j
-tysF0iaVRplSKO5qWRw+s9GyPUu5U4OcGYw+sTTkyEPazc6VOByXXTGf8ahk2kA/
-kU1J87UIhqKBSzV2ohqDCuCKORayBfRQVnxgW7CAqy7I1lmWklVqaONzNpYPmAE+
-lCRfLYgbwG9xBMamP1472AsqJBGOyCMZz1iKl2lSU0lV0i0B1Jy0tof2Qw/70WcR
-mvvdaRg5Lc0h/JKHEsy2HgXRoxoc3A/Bkf002yold91Xa4xSgDsSlb8sW5xpyvTF
-K/szBtrBDB1oaH2qmOuEmHrzGLzjv51wjBaYA9eEZHL8MKCSnKYC7pFRvj1uGAhN
-etFPkAeDnz0NqJT8M5F5Visgg14apYMySNtQM87hmnmZKOquGmxX+J3JipQtEZ6h
-4ElYB/hL2Zml5njiyPy7hS9TAZ4xhJJ75Fn4MnjtpgRUi9QUv/PZQ82wg+Ixm5xV
-rg+Q3unDhiXB+DSqNy5Xf5pDCdCBeP/lj3geJNk3AQNAVGZiSa8bMDqjMSkqOwAT
-Wud6bPFOCvXLR16OJBzeaOc62J/0cR0iYZYhTcC8JrkJ71NEW6lwlx6++Xtxnk8q
-cBRwi+C+JWwgemLjdbvgjoaEerm5//yaiFcxlyLdEERQJ09F93s=
-=26+C
+iQIzBAEBCgAdFiEEspJhYfD4nO6KU99GBo05RKjIab4FAl257ZsACgkQBo05RKjI
+ab7wMA/+OHRWodOtu8/ddYxLIYdezAovfqGK9CGyuYBt6rTNAVVqDbnyHpdM1/xL
+rS81yECp5OPmRTsbZ2fCUHTjXQrN3cYwxU3eRTludXsyKQ9CJf0q3VYOGeS6OgZ8
+YJy0HqNi3m2Epg9+enu56ZWc9WaukIFj/BjPRRd4uJ9YHItpBEq5MI9Nmst5oTTg
+XyxII1QnMeGCN5xSPYQPmSTdiW9DOy+JQLTlsza/nOdbX/+/ib1nsdxtujIu2aiC
+DCKS5rCZcacN7FvP0mhISsDqqWGUNRjQkTP3Q286mz5bnss+W9lfrwLvhAVKprAc
+7oo6vBYkdIxW0MfUsb0Ud+mUsKnbQ4YaiNq/CfdUCXwmr+FG0qdux1CaIq66PtXS
+UOjFWilVyeXz4YkUur2rFGRWFbteeU6hp8k/URz7QmhxnOkpV8BynoDuDJbkPeaC
+JJC4EIi4j+U+yjOTWAmf+v8AqA1ELvw1uuUp2LTH3SPsldvlvV3cp02NOUfyq1Nv
+qSfSymhDAo1sVQrVvGcWJ8Nt05fo/DUtnNOuI8QN2Mj6q/30rYnS4gBVLEf+kvwX
+Kz+5DUhG8jwKPk3WHzjE2rFR3h/N4FM0/OVVLBG9I+W9fMe9hPpWw2qdgNF05Yo/
+QVqqle8tZ9FRuWS1ozKWmNyLpSqzcyOILE9+PwTEWIPM19XjSYQ=
+=v9pM
 -----END PGP SIGNATURE-----

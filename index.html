@@ -18,8 +18,8 @@
 <h1 class="title">godot2-rpi</h1>
 </header>
 <p>This repository contains pre-compiled binaries of the Godot game engine, version 2.1, for the Raspbian distribution.</p>
-<p>To create games with it, you need at least a Raspberry Pi 2 with the new OpenGL driver enabled.</p>
-<p>I have found that on a Raspberry Pi 3B+ (not overclocked), Godot 2.1 is pretty snappy, but, even on a Raspberry Pi 2, it is fairly useable. While these binaries have not been tested on a Raspberry Pi 4, they should work.</p>
+<p>To create games with it, you need at least a Pi 2 (with the new OpenGL driver enabled), or a similar board.</p>
+<p>I have found that on a Pi 3B+ (not overclocked), Godot 2.1 is pretty snappy, but, even on a Pi 2, it is fairly useable. While these binaries have not been tested on a Pi 4, they should work.</p>
 <p>Please note that this is an old version of Godot, and more recent versions are available. See here: <a href="https://godotengine.org" class="uri">https://godotengine.org</a>.</p>
 <h2 id="installing-godot-2.1-on-raspbian">Installing Godot 2.1 on Raspbian</h2>
 <p>First, add the public key of this repository to apt:</p>
@@ -36,8 +36,11 @@ deb https://efornara.github.io/godot2-rpi-repo buster main</code></pre>
 <p>You can install godot2:</p>
 <pre><code>sudo apt install godot2 godot2-doc</code></pre>
 <p>You strictly don’t need to install <code>godot2-doc</code> and if you are short on space you can skip it (it is around 250M uncompressed), but it is really recommended that you do: the Godot documentation is pretty extensive.</p>
-<h2 id="stable-versions">Stable Versions</h2>
-<p>The versions installed by default are slightly modified compared to 2.1.6-stable from upstream. If you prefer the unpatched versions, they are available as <code>godot2-editor-stable</code> and <code>godot2-runner-stable</code>.</p>
+<h2 id="development-versions">Development Versions</h2>
+<p>The version of the editor installed by default (<code>godot2-editor-stable</code>) is the unpatched 2.1.6-stable from upstream with only some compilation options changed to improve performance (i.e. hard-float and thinLTO).</p>
+<p>This repository also includes slightly modified builds targeted at single board computers. For example, <code>godot2-editor</code> uses EGL and GLESv2 instead of GLX and GL to allow you to use the native graphics library of your board directly, without a shim. Source can be found at <a href="https://github.com/efornara/godot" class="uri">https://github.com/efornara/godot</a>.</p>
+<h2 id="debian-and-armbian">Debian and Armbian</h2>
+<p>The packages in this repository should also be useable on armhf systems based on Debian and Armbian. If you want to rebuild the executables in this repositories changing some compilation flags to better target your own board, you can use <code>compile.sh</code> as a starting point.</p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><p><a href="https://docs.godotengine.org/en/2.1/learning/step_by_step/index.html">Online Godot 2.1 Documentation</a> - Browse <code>godot2-doc</code> online.</p></li>
