@@ -1,12 +1,12 @@
 This repository contains pre-compiled binaries of the Godot game engine,
 version 2.1, for the Raspbian distribution.
 
-To create games with it, you need at least a Raspberry Pi 2 with the new
-OpenGL driver enabled.
+To create games with it, you need at least a Pi 2 (with the new OpenGL driver
+enabled), or a similar board.
 
-I have found that on a Raspberry Pi 3B+ (not overclocked), Godot 2.1 is pretty
-snappy, but, even on a Raspberry Pi 2, it is fairly useable.  While these
-binaries have not been tested on a Raspberry Pi 4, they should work.
+I have found that on a Pi 3B+ (not overclocked), Godot 2.1 is pretty snappy,
+but, even on a Pi 2, it is fairly useable. While these binaries have not been
+tested on a Pi 4, they should work.
 
 Please note that this is an old version of Godot, and more recent versions are
 available. See here: <https://godotengine.org>.
@@ -23,7 +23,7 @@ Then, add the repository to apt. Download an apt entry:
 
 Or create it yourself:
 
-	# Godot 2.1 for Raspbian
+    # Godot 2.1 for Raspbian
     deb https://efornara.github.io/godot2-rpi-repo buster main
 
 And copy it into `/etc/apt/sources.list.d`:
@@ -42,11 +42,24 @@ You strictly don't need to install `godot2-doc` and if you are short on space
 you can skip it (it is around 250M uncompressed), but it is really recommended
 that you do: the Godot documentation is pretty extensive.
 
-## Stable Versions
+## Development Versions
 
-The versions installed by default are slightly modified compared to
-2.1.6-stable from upstream. If you prefer the unpatched versions, they are
-available as `godot2-editor-stable` and `godot2-runner-stable`.
+The version of the editor installed by default (`godot2-editor-stable`) is the
+unpatched 2.1.6-stable from upstream with only some compilation options
+changed to improve performance (i.e. hard-float and thinLTO).
+
+This repository also includes slightly modified builds targeted at single
+board computers. For example, `godot2-editor` uses EGL and GLESv2 instead of
+GLX and GL to allow you to use the native graphics library of your board
+directly, without a shim. Source can be found at
+<https://github.com/efornara/godot>.
+
+## Debian and Armbian
+
+The packages in this repository should also be useable on armhf systems based
+on Debian and Armbian. If you want to rebuild the executables in this
+repositories changing some compilation flags to better target your own board,
+you can use `compile.sh` as a starting point.
 
 ## Resources
 

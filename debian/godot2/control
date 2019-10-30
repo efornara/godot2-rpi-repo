@@ -1,6 +1,6 @@
-Version: 2.1.6-1
+Version: 2.1.6-2
 Architecture: all
-Depends: godot2-editor
+Depends: godot2-editor-stable
 Suggests: godot2-doc
 Homepage: https://godotengine.org
 Description: Full 2D and 3D game engine with editor

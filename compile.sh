@@ -7,11 +7,11 @@ die() {
 }
 
 usage() {
-	die "usage: compile.sh editor|runner|server|headless|frt"
+	die "usage: compile.sh editor|runner|server|headless|frt|editor-stable|runner-stable"
 }
 
 [ -x compile.sh ] || die "Please run from project root directory."
-[ -f workdir/godot/README.md ] || die "No godot source."
+[ -f workdir/godot/README.md -o -f workdir/stable/README.md ] || die "No godot source."
 [ $# -eq 1 ] || usage
 
 # Theora is builtin in console applications because linking it would cause
@@ -30,20 +30,10 @@ common_opts="\
 	builtin_libwebp=no \
 	builtin_openssl=no \
 	"
-ccflags_pi1="\
-	-mcpu=arm1176jzf-s \
+ccflags_rpi="\
+	-march=armv6 \
 	-mfpu=vfp \
 	-mfloat-abi=hard \
-	-mlittle-endian \
-	-munaligned-access\
-	"
-
-ccflags_pi2="\
-	-mcpu=cortex-a7 \
-	-mfpu=neon-vfpv4 \
-	-mfloat-abi=hard \
-	-mlittle-endian \
-	-munaligned-access\
 	"
 
 export BUILD_REVISION=rpi
@@ -59,7 +49,8 @@ case $1 in
 			$common_opts \
 			builtin_libsquish=no \
 			builtin_libtheora=no \
-			CCFLAGS="$ccflags_pi2" \
+			pulseaudio=no \
+			CCFLAGS="$ccflags_rpi" \
 			-j 4
 		strip bin/godot.x11.opt.tools.32.llvm
 		;;
@@ -71,7 +62,8 @@ case $1 in
 			target=release \
 			$common_opts \
 			builtin_libtheora=no \
-			CCFLAGS="$ccflags_pi2" \
+			pulseaudio=no \
+			CCFLAGS="$ccflags_rpi" \
 			-j 4
 		strip bin/godot.x11.opt.32.llvm
 		;;
@@ -83,7 +75,7 @@ case $1 in
 			target=release \
 			$common_opts \
 			builtin_libtheora=yes \
-			CCFLAGS="$ccflags_pi1" \
+			CCFLAGS="$ccflags_rpi" \
 			-j 4
 		strip bin/godot_server.server.opt.32
 		;;
@@ -95,7 +87,7 @@ case $1 in
 			target=release_debug \
 			$common_opts \
 			builtin_libtheora=yes \
-			CCFLAGS="$ccflags_pi1" \
+			CCFLAGS="$ccflags_rpi" \
 			-j 4
 		strip bin/godot_server.server.opt.tools.32
 		;;
@@ -104,12 +96,12 @@ case $1 in
 		[ -f platform/frt/README.md ] || die "No frt source."
 		nice scons \
 			platform=frt \
-			frt_arch=pi1 \
 			target=release \
 			$common_opts \
 			builtin_libtheora=yes \
+			CCFLAGS="$ccflags_rpi" \
 			-j 4
-		strip bin/godot.frt.opt.llvm.pi1
+		strip bin/godot.frt.opt.llvm
 		;;
 	editor-stable)
 		cd stable
@@ -120,7 +112,7 @@ case $1 in
 			$common_opts \
 			builtin_libsquish=no \
 			builtin_libtheora=no \
-			CCFLAGS="$ccflags_pi2" \
+			CCFLAGS="$ccflags_rpi" \
 			-j 4
 		strip bin/godot.x11.opt.tools.32.llvm
 		;;
@@ -132,7 +124,7 @@ case $1 in
 			target=release \
 			$common_opts \
 			builtin_libtheora=no \
-			CCFLAGS="$ccflags_pi2" \
+			CCFLAGS="$ccflags_rpi" \
 			-j 4
 		strip bin/godot.x11.opt.32.llvm
 		;;
