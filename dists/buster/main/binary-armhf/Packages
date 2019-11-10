@@ -20,6 +20,23 @@ Description: Full 2D and 3D game engine with editor
 Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
 Installed-Size: 36
 
+Package: godot2-dev-deps
+Version: 1.0.0-1
+Architecture: all
+Depends: build-essential, clang, scons, pkg-config, libx11-dev, libgles2-mesa-dev, libasound2-dev, libfreetype6-dev, libudev-dev, libpng-dev, zlib1g-dev, libxcursor-dev, libxinerama-dev, libxrandr-dev, libxi-dev, libssl-dev, libwebp-dev, libtheora-dev, libvorbis-dev, libopus-dev, libopusfile-dev, libglew-dev, libpulse-dev, libgbm-dev
+Priority: optional
+Section: devel
+Filename: pool/main/g/godot2-dev-deps/godot2-dev-deps_1.0.0-1_all.deb
+Size: 968
+SHA256: 6a07c8e92b91a4289152daa88c31131640abd0f789e5366e8aae80235815204e
+SHA1: bedf772dff5ecaf0655656a5819278a7ab45ee7b
+MD5sum: 269e808546d609ed1c560eaa55a4bd8c
+Description: Godot game engine development dependencies
+ Dependencies required to compile the Godot game engine from source.
+ You can write, debug and export games without installing this package.
+Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
+Installed-Size: 12
+
 Package: godot2-doc
 Version: 2.1.6-1
 Architecture: all
