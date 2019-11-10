@@ -1,0 +1,6 @@
+Version: 1.0.0-1
+Architecture: all
+Depends: build-essential, clang, scons, pkg-config, libx11-dev, libgles2-mesa-dev, libasound2-dev, libfreetype6-dev, libudev-dev, libpng-dev, zlib1g-dev, libxcursor-dev, libxinerama-dev, libxrandr-dev, libxi-dev, libssl-dev, libwebp-dev, libtheora-dev, libvorbis-dev, libopus-dev, libopusfile-dev, libglew-dev, libpulse-dev, libgbm-dev
+Description: Godot game engine development dependencies
+ Dependencies required to compile the Godot game engine from source.
+ You can write, debug and export games without installing this package.
