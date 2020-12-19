@@ -56,7 +56,7 @@ Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
 Installed-Size: 257928
 
 Package: godot2-editor
-Version: 2.1.6-2
+Version: 2.1.6-3
 Architecture: armhf
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libegl1, libgles2, libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libsquish0, libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libtheora0 (>= 1.0), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2, zlib1g (>= 1:1.2.0)
 Provides: godot2-runner
@@ -64,11 +64,11 @@ Suggests: godot2-doc
 Homepage: https://godotengine.org
 Priority: optional
 Section: devel
-Filename: pool/main/g/godot2-editor/godot2-editor_2.1.6-2_armhf.deb
-Size: 12689288
-SHA256: 38c6e093d7df499a1e0afde2bf45f886ae41bb8a7143a9f6fce76cde0e65a856
-SHA1: fc3571e1671e0ab135a0bc7ac89c2f5a469a4258
-MD5sum: 3b409b71bb0e61ba99fc756b7d57842c
+Filename: pool/main/g/godot2-editor/godot2-editor_2.1.6-3_armhf.deb
+Size: 12693756
+SHA256: e52fa50dccb3e062301edc979a924fce70cf3aecdc47ae9bbeec35961cc3a82c
+SHA1: 5fefed480b67791cf5eb8b4256d9c70b4d56f18e
+MD5sum: 93cf1fd8be473f723b49e13538b22703
 Description: Godot game engine editor
  Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
  This package provides the program (godot2) used to develop games.
@@ -76,7 +76,7 @@ Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
 Installed-Size: 56368
 
 Package: godot2-editor-stable
-Version: 2.1.6-2
+Version: 2.1.6-3
 Architecture: armhf
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libgl1, libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libpulse0 (>= 0.99.1), libsquish0, libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libtheora0 (>= 1.0), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2, zlib1g (>= 1:1.2.0)
 Provides: godot2-runner
@@ -84,11 +84,11 @@ Suggests: godot2-doc
 Homepage: https://godotengine.org
 Priority: optional
 Section: devel
-Filename: pool/main/g/godot2-editor-stable/godot2-editor-stable_2.1.6-2_armhf.deb
-Size: 12871504
-SHA256: 61567dc9a7b8d4d65319030b92c8fe9389c2b0fd7f0a146f169ed67b67e07b69
-SHA1: 53e2a7e6ebe3afdd1e52d2667dcdf44506fce413
-MD5sum: c331edd461fd0169f34dcef9be16a775
+Filename: pool/main/g/godot2-editor-stable/godot2-editor-stable_2.1.6-3_armhf.deb
+Size: 12865084
+SHA256: e7ddef970ea1cc8fdd87be54a7fe0acccbb13489e9f6ee4ceafea9ff1518ab06
+SHA1: 61525feaf527bba1ddec9ae2b01e273b8dcffe31
+MD5sum: 6dafbb4b7c7a2faf41ffaf089938e0aa
 Description: Godot game engine editor (stable)
  Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
  This package provides the program (godot2-stable) used to develop games.
@@ -116,18 +116,18 @@ Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
 Installed-Size: 55380
 
 Package: godot2-runner-frt
-Version: 0.9.6-2
+Version: 0.9.9a-1
 Architecture: armhf
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), zlib1g (>= 1:1.2.0)
 Provides: godot2-runner
 Homepage: https://godotengine.org
 Priority: optional
 Section: devel
-Filename: pool/main/g/godot2-runner-frt/godot2-runner-frt_0.9.6-2_armhf.deb
-Size: 5030296
-SHA256: 136c6092911bd927c7cd1f85f30584b95a5004ad9a0c3f210a14cd5d4abe2565
-SHA1: 47e2aa37ce2c144bc043a7b0bc51cbdf335b461f
-MD5sum: 079947102a93a669e9e1506c273391d0
+Filename: pool/main/g/godot2-runner-frt/godot2-runner-frt_0.9.9a-1_armhf.deb
+Size: 5029264
+SHA256: 62a94e4d134e1f4675b9ebfb9b662070f7bcc8aee83ee3738c61dece7a58ec8e
+SHA1: f0e03c31ce8423202509b832cd123e3bf85a8ecc
+MD5sum: da63c5bde050db513a4f39d396b12c33
 Description: Godot game engine run-time (frt)
  Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
  This package allows games to be run from source or data-pack.
@@ -137,18 +137,18 @@ Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
 Installed-Size: 26024
 
 Package: godot2-runner-stable
-Version: 2.1.6-2
+Version: 2.1.6-3
 Architecture: armhf
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libgl1, libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libpulse0 (>= 0.99.1), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libtheora0 (>= 1.0), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2, zlib1g (>= 1:1.2.0)
 Provides: godot2-runner
 Homepage: https://godotengine.org
 Priority: optional
 Section: devel
-Filename: pool/main/g/godot2-runner-stable/godot2-runner-stable_2.1.6-2_armhf.deb
-Size: 5154872
-SHA256: f627f834fd3dc6625a2faefffa715c92353966bb4de3d769ae24a5aaeb2204eb
-SHA1: b8d6a40d5c12f8117a08c390803fa9ac4f3b79eb
-MD5sum: f922e6cfb9e24b20ecb74f580413093f
+Filename: pool/main/g/godot2-runner-stable/godot2-runner-stable_2.1.6-3_armhf.deb
+Size: 5153812
+SHA256: a79383971d2529f58b499ffccc8bc8a8414eb4ee7c59d4bd90383ef7e158144f
+SHA1: db84452e073204f8a72dc2c8c94ae0d306219fb3
+MD5sum: b4f9bac83f341287c058e98c26ca3ac4
 Description: Godot game engine run-time (stable)
  Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
  This package allows games to be run from source or data-pack.
@@ -159,18 +159,18 @@ Maintainer: Emanuele Fornara <efornara@users.sourceforge.net>
 Installed-Size: 26732
 
 Package: godot2-runner-x11
-Version: 2.1.6-2
+Version: 2.1.6-3
 Architecture: armhf
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.28), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.5), libegl1, libgles2, libogg0 (>= 1.0rc3), libopus0 (>= 1.1), libopusfile0 (>= 0.5), libpng16-16 (>= 1.6.2-1), libssl1.1 (>= 1.1.0), libstdc++6 (>= 7), libtheora0 (>= 1.0), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwebp6 (>= 0.5.1), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2, zlib1g (>= 1:1.2.0)
 Provides: godot2-runner
 Homepage: https://godotengine.org
 Priority: optional
 Section: devel
-Filename: pool/main/g/godot2-runner-x11/godot2-runner-x11_2.1.6-2_armhf.deb
-Size: 5050152
-SHA256: f6864cbb0df50b3c8afe66f6db5c00019d4d128550cbd9cd3e687a527d5bea47
-SHA1: e2b60f8dd97edda8cef780b5e32713962f673d4b
-MD5sum: 74296d8f98448fb5d78a022de37e717d
+Filename: pool/main/g/godot2-runner-x11/godot2-runner-x11_2.1.6-3_armhf.deb
+Size: 5049492
+SHA256: d1572d5b24f4bd5322cae379b0feb51db12912d55b7c8d38abc149260455d1bc
+SHA1: 03a9e5de0a50ec13f45c7b58ab43ca13c38c1188
+MD5sum: b9d6500fba1481e8b3a9a71e690c897f
 Description: Godot game engine run-time (x11)
  Godot is an advanced, feature packed, multi-platform 2D and 3D game engine.
  This package allows games to be run from source or data-pack.
